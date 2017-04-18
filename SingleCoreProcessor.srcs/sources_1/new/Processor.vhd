@@ -64,6 +64,21 @@ component FileRegister --Define the FileRegister component to be used
     );
 end component;
 
+component Control
+    port (
+     opcode : in STD_LOGIC_VECTOR(5 downto 0);
+     Rd : out STD_LOGIC;
+     J : out STD_LOGIC;
+     B : out STD_LOGIC;
+     MR : out STD_LOGIC;
+     MtoR : out STD_LOGIC;
+     MW : out STD_LOGIC;
+     ALUsrc : out STD_LOGIC;
+     RW : out STD_LOGIC;
+     ALUop : out STD_LOGIC_VECTOR(1 downto 0)
+    );
+end component;
+
 Signal OutputDataSignal: STD_LOGIC_VECTOR(31 downto 0); --These signals are currently dummy values
 Signal ReadData1Signal : STD_LOGIC_VECTOR(31 downto 0);
 Signal ReadData2Signal: STD_LOGIC_VECTOR(31 downto 0);
@@ -71,6 +86,17 @@ Signal WriteDataSignal: STD_LOGIC_VECTOR(31 downto 0);
 Signal ReadReg1Signal: STD_LOGIC_VECTOR(4 downto 0);
 Signal ReadReg2Signal: STD_LOGIC_VECTOR(4 downto 0);
 Signal WriteRegSignal: STD_LOGIC_VECTOR(4 downto 0);
+
+Signal opcode : STD_LOGIC_VECTOR(5 downto 0);
+Signal Rd : STD_LOGIC;
+Signal J : STD_LOGIC;
+Signal B : STD_LOGIC;
+Signal MR : STD_LOGIC;
+Signal MtoR : STD_LOGIC;
+Signal MW : STD_LOGIC;
+Signal ALUsrc : STD_LOGIC;
+Signal RW : STD_LOGIC;
+Signal ALUop : STD_LOGIC_VECTOR(1 downto 0);
 
 begin
 
@@ -90,4 +116,16 @@ begin
                         clk,
                         WriteEnable);
 
+    Control_Portion: Control port map(
+        opcode,
+         Rd,
+         J,
+         B,
+         MR,
+         MtoR,
+         MW,
+         ALUsrc,
+         RW,
+         ALUop
+    );
 end Structure;
