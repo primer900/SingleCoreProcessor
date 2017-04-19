@@ -64,6 +64,7 @@ component FileRegister --Define the FileRegister component to be used
     );
 end component;
 
+
 component Control
     port (
      opcode : in STD_LOGIC_VECTOR(5 downto 0);
@@ -77,6 +78,14 @@ component Control
      RW : out STD_LOGIC;
      ALUop : out STD_LOGIC_VECTOR(1 downto 0)
     );
+end component;
+
+component thirtytwobit_adder --Define the adder component to be used
+    port(
+        a, b : in	STD_LOGIC_VECTOR(31 downto 0);
+        z    : out    STD_LOGIC_VECTOR(31 downto 0);
+        cout : out STD_LOGIC
+        );
 end component;
 
 Signal OutputDataSignal: STD_LOGIC_VECTOR(31 downto 0); --These signals are currently dummy values
@@ -97,6 +106,11 @@ Signal MW : STD_LOGIC;
 Signal ALUsrc : STD_LOGIC;
 Signal RW : STD_LOGIC;
 Signal ALUop : STD_LOGIC_VECTOR(1 downto 0);
+
+Signal adder_a: STD_LOGIC_VECTOR(31 downto 0);
+Signal adder_b: STD_LOGIC_VECTOR(31 downto 0);
+Signal adder_z: STD_LOGIC_VECTOR(31 downto 0);
+Signal adder_cout: STD_LOGIC;
 
 begin
 
@@ -128,4 +142,12 @@ begin
          RW,
          ALUop
     );
+    
+    thirtytwobit_adder_Portion: thirtytwobit_adder port map(
+            adder_a,
+            adder_b, 
+            adder_z,
+            adder_cout
+            );
+    
 end Structure;

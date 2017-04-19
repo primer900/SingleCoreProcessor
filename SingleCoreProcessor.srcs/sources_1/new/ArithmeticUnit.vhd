@@ -45,11 +45,24 @@ entity ArithmeticUnit is
     );
 end ArithmeticUnit;
 
-architecture Behavioral of ArithmeticUnit is
-    
-begin
-    --Zero <= unsigned(Result) & "00000000000000000000000000000000"; --zero is true if Result is 0
 
+architecture Behavioral of ArithmeticUnit is
+   
+component thirtytwobit_adder --Define the adder component to be used
+    port(
+        a, b : in	STD_LOGIC_VECTOR(31 downto 0);
+        z    : out    STD_LOGIC_VECTOR(31 downto 0);
+        cout : out STD_LOGIC
+        );
+end component;
+
+Signal adder_a: STD_LOGIC_VECTOR(31 downto 0);
+Signal adder_b: STD_LOGIC_VECTOR(31 downto 0);
+Signal adder_z: STD_LOGIC_VECTOR(31 downto 0);
+Signal adder_cout: STD_LOGIC;
+
+begin
+    --Zero <= unsigned(Result) & "00000000000000000000000000000000"; --zero is true if Result is 0 
     
     findALUctl: process (ALUop, A, B)
     begin   
@@ -62,7 +75,7 @@ begin
         case(ALUop) is
             when "10" => 
                 case(func) is
-                    when "100000" => Result <= (A + B);
+                    when "100000" => Result <= thirtytwobit_adder port map(adder_a, adder_b, adder_z, adder_cout);
                     when "100010" => Result <= (A - B);
                     when "100100" => Result <= (A & B);
                     when "100101" => Result <= (A or B); 
