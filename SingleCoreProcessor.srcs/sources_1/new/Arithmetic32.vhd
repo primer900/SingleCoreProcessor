@@ -38,8 +38,9 @@ entity Arithmetic32 is
         AInvert : in STD_LOGIC;
         BInvert : in STD_LOGIC;
         Operation: in STD_LOGIC_VECTOR(1 downto 0);
+        Func: in STD_LOGIC_VECTOR(5 downto 0);
         CarryOut: out STD_LOGIC;
-        Result: Out STD_LOGIC_VECTOR
+        Result: Out STD_LOGIC_VECTOR(31 downto 0)
     );
 end Arithmetic32;
 
@@ -76,15 +77,25 @@ end component;
 signal i : integer := 0;
 signal cout: STD_LOGIC_VECTOR(31 downto 0);
 signal set: STD_LOGIC;
+signal invert: STD_LOGIC;
 
 begin
+    process
+    begin
+        if(Func="100000") then
+            invert <= '1';
+        else
+            invert <= '0';
+        end if;
+    end process;
+    
     a0: bit0to30 
         port map(
             A(0),
             B(0), 
-            '0', 
-            AInvert, 
-            BInvert, 
+            invert,
+            AInvert, --todo: when does A get inverted? 
+            invert, 
             Operation(0), 
             Operation(1), 
             set, 
@@ -114,6 +125,7 @@ begin
             BInvert, 
             Operation(0), 
             Operation(1),
+            Func,
             '0', --TODO: what should LEss be set to ?
             Result(31),
             Set,
