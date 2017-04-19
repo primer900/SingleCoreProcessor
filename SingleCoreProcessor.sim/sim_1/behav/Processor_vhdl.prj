@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../SingleCoreProcessor.srcs/sources_1/new/Control.vhd"
+vhdl xil_defaultlib  "../../../SingleCoreProcessor.srcs/sources_1/new/SRAM.vhd"
+vhdl xil_defaultlib  "../../../SingleCoreProcessor.srcs/sources_1/new/FileRegister.vhd"
+vhdl xil_defaultlib  "../../../SingleCoreProcessor.srcs/sources_1/new/Processor.vhd"
+
+# Do not sort compile order
+nosort

@@ -80,14 +80,6 @@ component Control
     );
 end component;
 
-component thirtytwobit_adder --Define the adder component to be used
-    port(
-        a, b : in	STD_LOGIC_VECTOR(31 downto 0);
-        z    : out    STD_LOGIC_VECTOR(31 downto 0);
-        cout : out STD_LOGIC
-        );
-end component;
-
 Signal OutputDataSignal: STD_LOGIC_VECTOR(31 downto 0); --These signals are currently dummy values
 Signal ReadData1Signal : STD_LOGIC_VECTOR(31 downto 0);
 Signal ReadData2Signal: STD_LOGIC_VECTOR(31 downto 0);
@@ -142,12 +134,5 @@ begin
          RW,
          ALUop
     );
-    
-    thirtytwobit_adder_Portion: thirtytwobit_adder port map(
-            adder_a,
-            adder_b, 
-            adder_z,
-            adder_cout
-            );
     
 end Structure;

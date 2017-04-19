@@ -30,8 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- any Xilinx leaf cells in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
-sum <= (x xor y) xor cin;
-cout <= (x and y) or (x and cin) or (y and cin);
+
 entity bit0to30 is
     Port ( a : in STD_LOGIC;
            b : in STD_LOGIC;
@@ -40,6 +39,7 @@ entity bit0to30 is
            binvert : in STD_LOGIC;
            operation0 : in STD_LOGIC;
            operation1 : in STD_LOGIC;
+           func: in STD_LOGIC_VECTOR(5 downto 0);
            less : in STD_LOGIC;
            result : out STD_LOGIC;
            cout: out STD_LOGIC);
@@ -49,6 +49,7 @@ architecture Behavioral of bit0to30 is
 
 signal aToUse: std_logic;
 signal bToUse: std_logic;
+signal cinToUse: STD_LOGIC;
 
 begin
     arithmeticUnit: process (a, b, cin, ainvert, binvert, operation0, operation1, less)
@@ -65,26 +66,26 @@ begin
             bToUse <= not(b);
         end if;
         
-        case(operation0) is
-            when '0' => 
-                case(operation1) is
-                    when '0' => 
-                        result <= (aToUse and bToUse);
-                        cout <= '0';
-                    when '1' => 
-                        result <= (aToUse or bToUse);
-                        cout <= '0';
-                end case;
-            when '1' =>
-                case(operation1) is
-                    when '0' => 
-                        result <= (aToUse xor bToUse) xor cin;
-                        cout <= (aToUse and bToUse) or (aToUse and cin) or (bToUse and cin);
-                    when '1' => 
-                        bToUse <= not(bToUse);
-                        result <= (aToUse xor bToUse) xor cin;
-                        cout <= (aToUse and bToUse) or (aToUse and cin) or (bToUse and cin);
-                 end case;
+        case(func) is
+            when "100000" => --add
+                result <= (aToUse xor bToUse) xor cin;
+                cout <= (aToUse and bToUse) or (aToUse and cin) or (bToUse and cin);
+            when "100010" => --subtract
+                cinToUse <= not(cin);
+                bToUse <= not(bToUse);
+                result <= (aToUse xor bToUse) xor cinToUse;
+                cout <= (aToUse and bToUse) or (aToUse and cinToUse) or (bToUse and cinToUse);
+            when "100100" => --and
+                result <= (aToUse and bToUse);
+                cout <= '0';
+            when "100101" => --or
+                result <= (aToUse or bToUse);
+                cout <= '0';
+            when "101010" => --slt
+                cinToUse <= not(cin);
+                bToUse <= not(bToUse);
+                result <= (aToUse xor bToUse) xor cinToUse;
+                cout <= (aToUse and bToUse) or (aToUse and cinToUse) or (bToUse and cinToUse);
         end case;
     end process;
 
