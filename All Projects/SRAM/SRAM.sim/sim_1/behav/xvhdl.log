@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Chris Procak/Documents/2016-2017/Computer Hardware/SRAM/SRAM.srcs/sources_1/new/SRAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SRAM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Chris Procak/Documents/2016-2017/Computer Hardware/SRAM/SRAM.srcs/sim_1/new/SRAM_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SRAM_tb

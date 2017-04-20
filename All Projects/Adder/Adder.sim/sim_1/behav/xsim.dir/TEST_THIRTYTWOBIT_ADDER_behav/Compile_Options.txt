@@ -1,0 +1,1 @@
+-wto "3e122a41cd4a4769936823dfda0e601b" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "TEST_THIRTYTWOBIT_ADDER_behav" "xil_defaultlib.TEST_THIRTYTWOBIT_ADDER" -log "elaborate.log" 

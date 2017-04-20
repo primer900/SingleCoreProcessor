@@ -1,0 +1,17 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 3e122a41cd4a4769936823dfda0e601b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TEST_THIRTYTWOBIT_ADDER_behav xil_defaultlib.TEST_THIRTYTWOBIT_ADDER -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd:55]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture my_dataflow of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture my_structure of entity xil_defaultlib.thirtytwobit_adder [thirtytwobit_adder_default]
+Compiling architecture my_test of entity xil_defaultlib.test_thirtytwobit_adder
+Built simulation snapshot TEST_THIRTYTWOBIT_ADDER_behav

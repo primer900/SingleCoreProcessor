@@ -1,0 +1,114 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 10160
+
+Current time: 	4/20/17 1:30:26 AM CDT
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1600x900
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	britt.ahlgrim
+User home directory: C:/Users/britt.ahlgrim
+User working directory: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SRAM
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/britt.ahlgrim/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/britt.ahlgrim/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	226 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 411 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\britt.ahlgrim\Desktop\marquette\years\2016-2017\semester 2\Computer Hardware\gitRepo\SRAM\SRAM.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 36 MB (+34913kb) [00:00:09]
+// [Engine Memory]: 404 MB (+272099kb) [00:00:09]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SRAM/SRAM.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SRAM' INFO: [Project 1-313] Project file moved from 'C:/Users/Chris Procak/Documents/2016-2017/Computer Hardware/SRAM' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 39 MB (+1280kb) [00:00:13]
+// [Engine Memory]: 466 MB (+44363kb) [00:00:13]
+// [GUI Memory]: 51 MB (+10704kb) [00:00:13]
+// [GUI Memory]: 54 MB (+1006kb) [00:00:17]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 33 MB. Current time: 4/20/17 1:30:34 AM CDT
+// [Engine Memory]: 508 MB (+18626kb) [00:00:19]
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 778.211 ; gain = 104.934 
+// Project name: SRAM; location: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SRAM; part: xc7a35tcsg324-3
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// a:a (cd:JFrame): Critical Messages: addNotify
+// Elapsed time: 15 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+// [GUI Memory]: 57 MB (+143kb) [00:10:45]
+// [GUI Memory]: 60 MB (+42kb) [00:12:31]
+// [GUI Memory]: 64 MB (+1044kb) [00:16:27]
+// [GUI Memory]: 70 MB (+2746kb) [00:21:33]
+// [GUI Memory]: 74 MB (+377kb) [00:26:44]
+// [GUI Memory]: 78 MB (+674kb) [00:29:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 33 MB. Current time: 4/20/17 2:00:35 AM CDT
+// [GUI Memory]: 82 MB (+52kb) [00:42:07]
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 31 MB. Current time: 4/20/17 2:30:37 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 31 MB. Current time: 4/20/17 3:00:39 AM CDT
+// [GUI Memory]: 87 MB (+840kb) [01:38:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 31 MB. Current time: 4/20/17 3:30:41 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 31 MB. Current time: 4/20/17 4:00:43 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 30 MB. Current time: 4/20/17 4:30:45 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 30 MB. Current time: 4/20/17 5:00:47 AM CDT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 13375 seconds
+selectView(PAResourceOtoP.PAViews_FLOW_NAVIGATOR, "Flow Navigator", 75, 75, 199, 801, false, false, false, true, false); // D:aE (JPanel:JComponent, cd:JFrame) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 55 MB. Current time: 4/20/17 7:01:10 AM CDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 6480 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New Project..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// g:g (cd:JFrame): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, g:g)
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, g:g)
+// 'g' command handler elapsed time: 6 seconds
+dismissDialog("New Project"); // g:g (cd:JFrame)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.

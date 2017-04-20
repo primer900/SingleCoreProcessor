@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Chris Procak/Documents/2016-2017/Computer Hardware/PROJECTS_23_LEARNING_FILES/Tutorial/tutorial.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Chris Procak/Documents/2016-2017/Computer Hardware/RegisterFile/RegisterFile.srcs/sim_1/imports/Tutorial/tutorial_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tutorial_tb

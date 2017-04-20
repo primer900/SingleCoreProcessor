@@ -1,0 +1,447 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 19 20:56:20 2017
+# Process ID: 7104
+# Current directory: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.runs/synth_1
+# Command line: vivado.exe -log ALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+# Log file: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.runs/synth_1/ALU.vds
+# Journal file: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ALU.tcl -notrace
+Command: synth_design -top ALU -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2708 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 283.324 ; gain = 72.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/ALU.vhd:46]
+INFO: [Synth 8-3491] module 'Arithmetic32' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:34' bound to instance 'arithmetic' of component 'Arithmetic32' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/ALU.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'Arithmetic32' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:48]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'a0' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:49]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'bit0to30' (1#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:49]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:113]
+INFO: [Synth 8-3491] module 'bit31' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit31.vhd:34' bound to instance 'a31' of component 'bit31' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'bit31' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit31.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'bit31' (2#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit31.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Arithmetic32' (3#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd:48]
+INFO: [Synth 8-3491] module 'Shifter' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Shifter.vhd:35' bound to instance 'shift' of component 'Shifter' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/ALU.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'Shifter' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Shifter.vhd:44]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Shifter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Shifter' (4#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Shifter.vhd:44]
+INFO: [Synth 8-3491] module 'control' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Control.vhd:9' bound to instance 'ctrl' of component 'control' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/ALU.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'control' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Control.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'control' (5#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Control.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (6#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/ALU.vhd:46]
+WARNING: [Synth 8-3331] design bit0to30 has unconnected port binvert
+WARNING: [Synth 8-3331] design bit0to30 has unconnected port operation0
+WARNING: [Synth 8-3331] design bit0to30 has unconnected port operation1
+WARNING: [Synth 8-3331] design bit0to30 has unconnected port less
+WARNING: [Synth 8-3331] design bit31 has unconnected port binvert
+WARNING: [Synth 8-3331] design bit31 has unconnected port operation0
+WARNING: [Synth 8-3331] design bit31 has unconnected port operation1
+WARNING: [Synth 8-3331] design bit31 has unconnected port less
+WARNING: [Synth 8-3331] design ALU has unconnected port ALUOp[1]
+WARNING: [Synth 8-3331] design ALU has unconnected port ALUOp[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 320.727 ; gain = 110.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 320.727 ; gain = 110.066
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/britt.ahlgrim/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/britt.ahlgrim/Downloads/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/britt.ahlgrim/Downloads/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ALU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ALU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 617.996 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "cinToUse" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cinToUse" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Set" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "invert" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "J" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MW" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "RW" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "Zeroflag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Zeroflag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 96    
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 164   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 194   
+	   6 Input      1 Bit        Muxes := 129   
+	   9 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ALU 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module bit0to30 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 4     
+Module bit31 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 5     
+Module Arithmetic32 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Shifter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      2 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design ALU has unconnected port ALUOp[1]
+WARNING: [Synth 8-3331] design ALU has unconnected port ALUOp[0]
+INFO: [Synth 8-3886] merging instance 'arithmetic/a0/aToUse_reg' (FD) to 'shift/SO_reg[0]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[1].as/aToUse_reg' (FD) to 'shift/SO_reg[1]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[2].as/aToUse_reg' (FD) to 'shift/SO_reg[2]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[3].as/aToUse_reg' (FD) to 'shift/SO_reg[3]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[4].as/aToUse_reg' (FD) to 'shift/SO_reg[4]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[5].as/aToUse_reg' (FD) to 'shift/SO_reg[5]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[6].as/aToUse_reg' (FD) to 'shift/SO_reg[6]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[7].as/aToUse_reg' (FD) to 'shift/SO_reg[7]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[8].as/aToUse_reg' (FD) to 'shift/SO_reg[8]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[9].as/aToUse_reg' (FD) to 'shift/SO_reg[9]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[10].as/aToUse_reg' (FD) to 'shift/SO_reg[10]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[11].as/aToUse_reg' (FD) to 'shift/SO_reg[11]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[12].as/aToUse_reg' (FD) to 'shift/SO_reg[12]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[13].as/aToUse_reg' (FD) to 'shift/SO_reg[13]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[14].as/aToUse_reg' (FD) to 'shift/SO_reg[14]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[15].as/aToUse_reg' (FD) to 'shift/SO_reg[15]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[16].as/aToUse_reg' (FD) to 'shift/SO_reg[16]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[17].as/aToUse_reg' (FD) to 'shift/SO_reg[17]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[18].as/aToUse_reg' (FD) to 'shift/SO_reg[18]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[19].as/aToUse_reg' (FD) to 'shift/SO_reg[19]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[20].as/aToUse_reg' (FD) to 'shift/SO_reg[20]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[21].as/aToUse_reg' (FD) to 'shift/SO_reg[21]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[22].as/aToUse_reg' (FD) to 'shift/SO_reg[22]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[23].as/aToUse_reg' (FD) to 'shift/SO_reg[23]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[24].as/aToUse_reg' (FD) to 'shift/SO_reg[24]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[25].as/aToUse_reg' (FD) to 'shift/SO_reg[25]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[26].as/aToUse_reg' (FD) to 'shift/SO_reg[26]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[27].as/aToUse_reg' (FD) to 'shift/SO_reg[27]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[28].as/aToUse_reg' (FD) to 'shift/SO_reg[28]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[29].as/aToUse_reg' (FD) to 'shift/SO_reg[29]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/stage[30].as/aToUse_reg' (FD) to 'shift/SO_reg[30]'
+INFO: [Synth 8-3886] merging instance 'arithmetic/a31/aToUse_reg' (FD) to 'shift/SO_reg[31]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:01 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:35 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:26 ; elapsed = 00:01:35 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |    32|
+|3     |LUT3 |    32|
+|4     |LUT4 |    34|
+|5     |LUT5 |    99|
+|6     |LUT6 |    46|
+|7     |FDRE |   194|
+|8     |FDSE |     1|
+|9     |IBUF |    71|
+|10    |OBUF |    34|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------+-------------+------+
+|      |Instance           |Module       |Cells |
++------+-------------------+-------------+------+
+|1     |top                |             |   544|
+|2     |  arithmetic       |Arithmetic32 |   366|
+|3     |    a0             |bit0to30     |    16|
+|4     |    a31            |bit31        |    11|
+|5     |    \stage[10].as  |bit0to30_0   |    12|
+|6     |    \stage[11].as  |bit0to30_1   |    11|
+|7     |    \stage[12].as  |bit0to30_2   |    11|
+|8     |    \stage[13].as  |bit0to30_3   |    11|
+|9     |    \stage[14].as  |bit0to30_4   |    11|
+|10    |    \stage[15].as  |bit0to30_5   |    11|
+|11    |    \stage[16].as  |bit0to30_6   |    12|
+|12    |    \stage[17].as  |bit0to30_7   |    11|
+|13    |    \stage[18].as  |bit0to30_8   |    11|
+|14    |    \stage[19].as  |bit0to30_9   |    11|
+|15    |    \stage[1].as   |bit0to30_10  |    12|
+|16    |    \stage[20].as  |bit0to30_11  |    11|
+|17    |    \stage[21].as  |bit0to30_12  |    11|
+|18    |    \stage[22].as  |bit0to30_13  |    13|
+|19    |    \stage[23].as  |bit0to30_14  |    11|
+|20    |    \stage[24].as  |bit0to30_15  |    11|
+|21    |    \stage[25].as  |bit0to30_16  |    11|
+|22    |    \stage[26].as  |bit0to30_17  |    11|
+|23    |    \stage[27].as  |bit0to30_18  |    11|
+|24    |    \stage[28].as  |bit0to30_19  |    12|
+|25    |    \stage[29].as  |bit0to30_20  |    11|
+|26    |    \stage[2].as   |bit0to30_21  |    11|
+|27    |    \stage[30].as  |bit0to30_22  |    12|
+|28    |    \stage[3].as   |bit0to30_23  |    11|
+|29    |    \stage[4].as   |bit0to30_24  |    12|
+|30    |    \stage[5].as   |bit0to30_25  |    11|
+|31    |    \stage[6].as   |bit0to30_26  |    11|
+|32    |    \stage[7].as   |bit0to30_27  |    11|
+|33    |    \stage[8].as   |bit0to30_28  |    11|
+|34    |    \stage[9].as   |bit0to30_29  |    11|
+|35    |  shift            |Shifter      |    39|
++------+-------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 617.996 ; gain = 407.336
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:10 . Memory (MB): peak = 617.996 ; gain = 110.066
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:01:38 . Memory (MB): peak = 617.996 ; gain = 407.336
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+107 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:33 . Memory (MB): peak = 617.996 ; gain = 407.336
+INFO: [Common 17-1381] The checkpoint 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.runs/synth_1/ALU.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 617.996 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 20:58:04 2017...

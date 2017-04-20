@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../ALU.srcs/sources_1/new/bit31.vhd"
+vhdl xil_defaultlib  "../../../ALU.srcs/sources_1/new/bit0to30.vhd"
+vhdl xil_defaultlib  "../../../ALU.srcs/sources_1/new/Shifter.vhd"
+vhdl xil_defaultlib  "../../../ALU.srcs/sources_1/new/Arithmetic32.vhd"
+vhdl xil_defaultlib  "../../../ALU.srcs/sources_1/new/Control.vhd"
+vhdl xil_defaultlib  "../../../ALU.srcs/sources_1/new/ALU.vhd"
+vhdl xil_defaultlib  "../../../ALU.srcs/sim_1/new/ALU_tb.vhd"
+
+# Do not sort compile order
+nosort

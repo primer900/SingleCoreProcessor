@@ -1,0 +1,14 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit31.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bit31
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/bit0to30.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bit0to30
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Shifter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Arithmetic32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Arithmetic32
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity control
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/ALU/ALU.srcs/sim_1/new/ALU_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_tb

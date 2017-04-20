@@ -1,0 +1,42 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Error: Failed Case 1 - z
+Time: 10 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 2 - z
+Time: 60 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 1 - z
+Time: 110 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 2 - z
+Time: 160 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 1 - z
+Time: 210 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 2 - z
+Time: 260 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 1 - z
+Time: 310 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 2 - z
+Time: 360 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 1 - z
+Time: 410 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 2 - z
+Time: 460 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 1 - z
+Time: 510 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 2 - z
+Time: 560 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 1 - z
+Time: 610 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 2 - z
+Time: 660 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 1 - z
+Time: 710 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 2 - z
+Time: 760 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 1 - z
+Time: 810 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 2 - z
+Time: 860 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 1 - z
+Time: 910 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
+Error: Failed Case 2 - z
+Time: 960 ns  Iteration: 0  Process: /TEST_THIRTYTWOBIT_ADDER/line__38  File: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/Adder/Adder.srcs/sim_1/new/TEST_THIRTYTWOBIT_ADDER - MY_TEST.vhd
