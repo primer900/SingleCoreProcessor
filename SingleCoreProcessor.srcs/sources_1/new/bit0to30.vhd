@@ -42,7 +42,8 @@ entity bit0to30 is
            func: in STD_LOGIC_VECTOR(5 downto 0);
            less : in STD_LOGIC;
            result : out STD_LOGIC;
-           cout: out STD_LOGIC);
+           cout: out STD_LOGIC;
+           clk: in STD_LOGIC);
 end bit0to30;
 
 architecture Behavioral of bit0to30 is
@@ -52,41 +53,46 @@ signal bToUse: std_logic;
 signal cinToUse: STD_LOGIC;
 
 begin
-    arithmeticUnit: process (a, b, cin, ainvert, binvert, operation0, operation1, less)
+    arithmeticUnit: process (a, b, cin, ainvert, binvert, operation0, operation1, func, less)
     begin
-        if(ainvert = '0') then 
-            aToUse <= a;
-        else 
-            aToUse <= not(a);
+        if (clk'event and clk = '1') then
+            if(ainvert = '0') then 
+                aToUse <= a;
+            else 
+                aToUse <= not(a);
+            end if;
+            
+            if(ainvert = '0') then 
+                bToUse <= b;
+            else 
+                bToUse <= not(b);
+            end if;
+            
+            case(func) is
+                when "100000" => --add
+                    result <= (aToUse xor bToUse) xor cin;
+                    cout <= (aToUse and bToUse) or (aToUse and cin) or (bToUse and cin);
+                when "100010" => --subtract
+                    cinToUse <= not(cin);
+                    bToUse <= not(bToUse);
+                    result <= (aToUse xor bToUse) xor cinToUse;
+                    cout <= (aToUse and bToUse) or (aToUse and cinToUse) or (bToUse and cinToUse);
+                when "100100" => --and
+                    result <= (aToUse and bToUse);
+                    cout <= '0';
+                when "100101" => --or
+                    result <= (aToUse or bToUse);
+                    cout <= '0';
+                when "101010" => --slt
+                    cinToUse <= not(cin);
+                    bToUse <= not(bToUse);
+                    result <= (aToUse xor bToUse) xor cinToUse;
+                    cout <= (aToUse and bToUse) or (aToUse and cinToUse) or (bToUse and cinToUse);
+                when others => --set to 0
+                    result <= '0';
+                    cout <= '0';
+            end case;
         end if;
-        
-        if(ainvert = '0') then 
-            bToUse <= b;
-        else 
-            bToUse <= not(b);
-        end if;
-        
-        case(func) is
-            when "100000" => --add
-                result <= (aToUse xor bToUse) xor cin;
-                cout <= (aToUse and bToUse) or (aToUse and cin) or (bToUse and cin);
-            when "100010" => --subtract
-                cinToUse <= not(cin);
-                bToUse <= not(bToUse);
-                result <= (aToUse xor bToUse) xor cinToUse;
-                cout <= (aToUse and bToUse) or (aToUse and cinToUse) or (bToUse and cinToUse);
-            when "100100" => --and
-                result <= (aToUse and bToUse);
-                cout <= '0';
-            when "100101" => --or
-                result <= (aToUse or bToUse);
-                cout <= '0';
-            when "101010" => --slt
-                cinToUse <= not(cin);
-                bToUse <= not(bToUse);
-                result <= (aToUse xor bToUse) xor cinToUse;
-                cout <= (aToUse and bToUse) or (aToUse and cinToUse) or (bToUse and cinToUse);
-        end case;
     end process;
 
 end Behavioral;

@@ -67,7 +67,7 @@ library UNISIM;
     CarryOut => CarryOut
      );
      
-   process
+   process (A, B, ALUOp, Func)
     
  begin
       --TODO: add testing for ALU

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_2" LaunchDir="C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.runs/synth_2" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

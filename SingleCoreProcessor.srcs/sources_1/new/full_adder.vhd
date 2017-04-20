@@ -11,16 +11,21 @@ use IEEE.std_logic_1164.all;
 entity full_adder is
   port(
     x, y, cin: in std_logic;
-    sum, cout: out std_logic);
+    sum, cout: out std_logic;
+    clk: in STD_LOGIC);
 end full_adder;
 
 -- architecture description;
 architecture my_dataflow of full_adder is
 
 begin
-
--- just two concurrent statements here!
-sum <= (x xor y) xor cin;
-cout <= (x and y) or (x and cin) or (y and cin);
+    process (clk) is
+    begin
+        if (clk'event and clk = '1') then
+            -- just two concurrent statements here!
+            sum <= (x xor y) xor cin;
+            cout <= (x and y) or (x and cin) or (y and cin);
+        end if;
+    end process;
 
 end my_dataflow;

@@ -40,31 +40,29 @@ Port (
     Result: out STD_LOGIC_VECTOR(31 downto 0);
     Overflow: out STD_LOGIC;
     Zeroflag: out STD_LOGIC;
-    CarryOut: out STD_LOGIC
+    clk: in STD_LOGIC
     );
 end ALU;
-
-
 architecture Behavioral of ALU is
 
 component Arithmetic32 is
     Port ( 
-        arithmetic_A: in STD_LOGIC_VECTOR(31 downto 0);
-        arithmetic_B: in STD_LOGIC_VECTOR(31 downto 0);
-        arithmetic_AInvert : in STD_LOGIC;
-        arithmetic_BInvert : in STD_LOGIC;
-        arithmetic_Operation: in STD_LOGIC_VECTOR(1 downto 0);
-        arithmetic_Func: in STD_LOGIC_VECTOR (5 downto 0);
-        arithmetic_CarryOut: out STD_LOGIC;
-        arithmetic_Result: Out STD_LOGIC_VECTOR
+        A: in STD_LOGIC_VECTOR(31 downto 0);
+        B: in STD_LOGIC_VECTOR(31 downto 0);
+        AInvert : in STD_LOGIC;
+        BInvert : in STD_LOGIC;
+        Operation: in STD_LOGIC_VECTOR(1 downto 0);
+        Func: in STD_LOGIC_VECTOR(5 downto 0);
+        CarryOut: out STD_LOGIC;
+        Result: Out STD_LOGIC_VECTOR(31 downto 0)
     );
 end component;
 component Shifter is
     Port(
-        shifter_DI : in STD_LOGIC_VECTOR(31 downto 0);  
-        shifter_SEL : in STD_LOGIC_VECTOR(1 downto 0);
-        shifter_DIR: in STD_LOGIC; 
-        shifter_SO : out STD_LOGIC_VECTOR(31 downto 0)); -- out vector
+    DI : in STD_LOGIC_VECTOR(31 downto 0);  
+    SEL : in STD_LOGIC_VECTOR(1 downto 0);
+    DIR: in STD_LOGIC; 
+    SO : out STD_LOGIC_VECTOR(31 downto 0)); -- out vector
 end component;
 component control Is
  port (
@@ -81,7 +79,7 @@ component control Is
   );
  end component;
 
-signal clk: STD_LOGIC;
+--signal clk: STD_LOGIC;
 signal rd: STD_LOGIC;
 signal j: STD_LOGIC;
 signal branch: STD_LOGIC;
@@ -104,7 +102,7 @@ begin
            '0', --todo: what should binvert be?
            ALUOpCode,
            Func,
-           CarryOut,
+           Overflow,
            arithmetic32_result
         );
     shift: Shifter 
@@ -130,12 +128,24 @@ begin
 
     process (clk) is
     begin
-        case (Func (1 downto 0)) is
-            when("00") =>
-                Result <= shifter_result;
-            when others =>
-                Result <= arithmetic32_result;
-        end case;    
+        if (clk'event and clk = '1') then
+            case (Func (1 downto 0)) is
+                when("00") =>
+                    Result <= shifter_result;
+                    if(shifter_result = "00000000000000000000000000000000") then
+                        Zeroflag <= '1';
+                    else
+                        Zeroflag <= '0';
+                    end if;
+                when others =>
+                    Result <= arithmetic32_result;
+                    if(arithmetic32_result = "00000000000000000000000000000000") then
+                        Zeroflag <= '1';
+                    else
+                        Zeroflag <= '0';
+                    end if;
+            end case;
+        end if; 
     end process;
 
 end Behavioral;

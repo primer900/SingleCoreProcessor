@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 19 19:28:19 2017
+# Process ID: 14488
+# Current directory: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.runs/synth_1
+# Command line: vivado.exe -log ALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+# Log file: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.runs/synth_1/ALU.vds
+# Journal file: C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ALU.tcl -notrace

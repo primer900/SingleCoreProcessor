@@ -17,15 +17,15 @@ end TEST_THIRTYTWOBIT_ADDER;
 
 -- Describes the functionality of the tesbench.
 
-architecture MY_TEST of TEST_FOURBIT_ADDER is 
+architecture MY_TEST of TEST_THIRTYTWOBIT_ADDER is 
 
-	component thirtytwobit_adder
-		port( a, b	: in    STD_LOGIC_VECTOR(31 downto 0);
-		      z		: out	STD_LOGIC_VECTOR(31 downto 0);
-		      cout	: out 	STD_LOGIC);
+	component thirtytwobit_adder is
+      port( 
+        a, b : in	STD_LOGIC_VECTOR(31 downto 0);
+        z	: out	STD_LOGIC_VECTOR(31 downto 0);
+        cout : out STD_LOGIC);
 	end component;
 
-	for U1: thirtytwobit_adder use entity WORK.FOURBIT_ADDER(MY_STRUCTURE);
 	signal a, b	: STD_LOGIC_VECTOR(31 downto 0);
 	signal z	: STD_LOGIC_VECTOR(31 downto 0);
 	signal cout	: STD_LOGIC;

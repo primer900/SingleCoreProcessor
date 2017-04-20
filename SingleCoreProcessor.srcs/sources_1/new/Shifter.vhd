@@ -37,31 +37,33 @@ Port(
     DI : in STD_LOGIC_VECTOR(31 downto 0);  
     SEL : in STD_LOGIC_VECTOR(1 downto 0);
     DIR: in STD_LOGIC; 
-    SO : out STD_LOGIC_VECTOR(31 downto 0)); -- out vector
+    SO : out STD_LOGIC_VECTOR(31 downto 0);
+    clk: in STD_LOGIC); -- out vector
 end Shifter;
 
 architecture Behavioral of Shifter is
 
 begin
-    process is
+    process (DI, SEL, DIR) is
     begin
-        case(DIR) is
-            when '0' => --shift left
-                case (SEL) is
-                    when "00" => SO <= DI;
-                    when "01" => SO <= DI(14 downto 0) &"0";
-                    when "10" => SO <= DI(13 downto 0) & "00";
-                    when others => SO <= DI(12 downto 0) & "000";
-                end case;
-            when others => --shift right
-                case (SEL) is
-                    when "00" => SO <= DI;
-                    when "01" => SO <= "0" & DI(15 downto 1);
-                    when "10" => SO <= "00" & DI(15 downto 2);
-                    when others => SO <= "000" & DI(12 downto 3);
-                end case;
-        end case;
-    
+        if (clk'event and clk = '1') then
+            case(DIR) is
+                when '0' => --shift left
+                    case (SEL) is
+                        when "00" => SO <= DI;
+                        when "01" => SO <= DI(30 downto 0) &"0";
+                        when "10" => SO <= DI(29 downto 0) & "00";
+                        when others => SO <= DI(28 downto 0) & "000";
+                    end case;
+                when others => --shift right
+                    case (SEL) is
+                        when "00" => SO <= DI;
+                        when "01" => SO <= "0" & DI(31 downto 1);
+                        when "10" => SO <= "00" & DI(31 downto 2);
+                        when others => SO <= "000" & DI(31 downto 3);
+                    end case;
+            end case;
+        end if;
     end process;
 
 end Behavioral;

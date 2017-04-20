@@ -1,0 +1,4 @@
+Running: xsim.dir/TEST_THIRTYTWOBIT_ADDER_behav/xsimk.exe -simmode gui -wdb TEST_THIRTYTWOBIT_ADDER_behav.wdb -simrunnum 2 -socket 52348
+Design successfully loaded
+Design Loading Memory Usage: 9980 KB (Peak: 9980 KB)
+Design Loading CPU Usage: 77 ms

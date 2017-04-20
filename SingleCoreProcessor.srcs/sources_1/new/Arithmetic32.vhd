@@ -40,38 +40,39 @@ entity Arithmetic32 is
         Operation: in STD_LOGIC_VECTOR(1 downto 0);
         Func: in STD_LOGIC_VECTOR(5 downto 0);
         CarryOut: out STD_LOGIC;
-        Result: Out STD_LOGIC_VECTOR(31 downto 0)
+        Result: Out STD_LOGIC_VECTOR(31 downto 0);
+        clk: In STD_LOGIC
     );
 end Arithmetic32;
 
 architecture Behavioral of Arithmetic32 is
 
 component bit0to30 is
-    Port ( a_adders : in STD_LOGIC;
-           b_adders : in STD_LOGIC;
-           cin_adders : in STD_LOGIC;
-           ainvert_adders : in STD_LOGIC;
-           binvert_adders : in STD_LOGIC;
-           operation0_adders : in STD_LOGIC;
-           operation1_adders : in STD_LOGIC;
-           less_adders : in STD_LOGIC;
-           result_adders : out STD_LOGIC;
-           cout_adders: out STD_LOGIC);
+    Port ( a : in STD_LOGIC;
+           b : in STD_LOGIC;
+           cin : in STD_LOGIC;
+           ainvert : in STD_LOGIC;
+           binvert : in STD_LOGIC;
+           operation0 : in STD_LOGIC;
+           operation1 : in STD_LOGIC;
+           func: in STD_LOGIC_VECTOR(5 downto 0);
+           less : in STD_LOGIC;
+           result : out STD_LOGIC;
+           cout: out STD_LOGIC);
 end component;
 component bit31 is
-    Port ( 
-        a_adder : in STD_LOGIC;
-        b_adder : in STD_LOGIC;
-        cin_adder : in STD_LOGIC;
-        ainvert_adder : in STD_LOGIC;
-        binvert_adder : in STD_LOGIC;
-        operation0_adder : in STD_LOGIC;
-        operation1_adder : in STD_LOGIC;
-        func: in STD_LOGIC_VECTOR(5 downto 0);
-        less_adder : in STD_LOGIC;
-        Result_adder : out STD_LOGIC;
-        Set_adder: out STD_LOGIC;
-        overflow_adder : out STD_LOGIC);
+    Port ( a : in STD_LOGIC;
+           b : in STD_LOGIC;
+           cin : in STD_LOGIC;
+           ainvert : in STD_LOGIC;
+           binvert : in STD_LOGIC;
+           operation0 : in STD_LOGIC;
+           operation1 : in STD_LOGIC;
+           func: in STD_LOGIC_VECTOR(5 downto 0);
+           less : in STD_LOGIC;
+           Result : out STD_LOGIC;
+           Set: out STD_LOGIC;
+           overflow : out STD_LOGIC);
 end component;
 
 signal i : integer := 0;
@@ -80,12 +81,14 @@ signal set: STD_LOGIC;
 signal invert: STD_LOGIC;
 
 begin
-    process
+    process (clk)
     begin
-        if(Func="100000") then
-            invert <= '1';
-        else
-            invert <= '0';
+        if (clk'event and clk = '1') then
+            if(Func="100000") then
+                invert <= '1';
+            else
+                invert <= '0';
+            end if;
         end if;
     end process;
     
@@ -97,7 +100,8 @@ begin
             AInvert, --todo: when does A get inverted? 
             invert, 
             Operation(0), 
-            Operation(1), 
+            Operation(1),
+            Func, 
             set, 
             Result(0), 
             cout(0)
@@ -111,7 +115,8 @@ begin
                 AInvert, 
                 BInvert, 
                 Operation(0), 
-                Operation(1), 
+                Operation(1),
+                Func, 
                 '0',
                 Result(I),
                 cout(I));

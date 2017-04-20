@@ -43,7 +43,7 @@ Architecture behavior of bit0to30_tb Is
         binvert : in STD_LOGIC;
         operation0 : in STD_LOGIC;
         operation1 : in STD_LOGIC;
-        func: in STD_LOGIC_VECTOR(5 downto '0');
+        func: in STD_LOGIC_VECTOR(5 downto 0);
         less : in STD_LOGIC;
         result : out STD_LOGIC;
         cout: out STD_LOGIC
@@ -57,24 +57,24 @@ Architecture behavior of bit0to30_tb Is
     Signal binvert : STD_LOGIC;
     Signal operation0 : STD_LOGIC;
     Signal operation1 : STD_LOGIC;
-    Signal func : STD_LOGIC;
+    Signal func : STD_LOGIC_VECTOR(5 downto 0);
     Signal less : STD_LOGIC;
     Signal result : STD_LOGIC;
     Signal cout: STD_LOGIC;
   
     begin
     uut:  bit0to30 PORT MAP (
-        a <= a,
-        b <= b,
-        cin<=cin,
-        ainvert<=ainvert,
-        binvert<=binvert,
-        operation0<=operation0,
-        operation1<=operation1,
-        func<=func,
-        less<=less,
-        result<=result,
-        cout<=cout
+        a => a,
+        b => b,
+        cin => cin,
+        ainvert => ainvert,
+        binvert => binvert,
+        operation0 => operation0,
+        operation1 => operation1,
+        func => func,
+        less => less,
+        result => result,
+        cout => cout
      );
      
     --test ADD
@@ -272,7 +272,7 @@ Architecture behavior of bit0to30_tb Is
              b<='1';
              --result should be '0'
              --cout should be '0'
-             wait for 50 ns;  
+             wait for 50 ns;
     
     --test SUB
           --test a-b

@@ -43,11 +43,11 @@ Architecture behavior of bit31_tb Is
         binvert : in STD_LOGIC;
         operation0 : in STD_LOGIC;
         operation1 : in STD_LOGIC;
-        func: in STD_LOGIC_VECTOR(5 downto '0');
+        func: in STD_LOGIC_VECTOR(5 downto 0);
         less : in STD_LOGIC;
         result : out STD_LOGIC;
         set: out STD_LOGIC;
-        cout: out STD_LOGIC
+        overflow: out STD_LOGIC
     );
     End Component;
    
@@ -58,26 +58,26 @@ Architecture behavior of bit31_tb Is
     Signal binvert : STD_LOGIC;
     Signal operation0 : STD_LOGIC;
     Signal operation1 : STD_LOGIC;
-    Signal func : STD_LOGIC;
+    Signal func : STD_LOGIc_VECTOR(5 downto 0);
     Signal less : STD_LOGIC;
     Signal result : STD_LOGIC;
     Signal set: STD_LOGIC;
-    Signal cout: STD_LOGIC;
+    Signal overflow: STD_LOGIC;
   
     begin
     uut:  bit31 PORT MAP (
-        a <= a,
-        b <= b,
-        cin<=cin,
-        ainvert<=ainvert,
-        binvert<=binvert,
-        operation0<=operation0,
-        operation1<=operation1,
-        func<=func,
-        less<=less,
-        result<=result,
-        set<=set,
-        cout<=cout
+        a => a,
+        b => b,
+        cin => cin,
+        ainvert => ainvert,
+        binvert => binvert,
+        operation0 => operation0,
+        operation1 => operation1,
+        func => func,
+        less => less,
+        result => result,
+        set => set,
+        overflow => overflow
      );
      
     --test ADD

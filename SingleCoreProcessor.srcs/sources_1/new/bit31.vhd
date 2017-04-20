@@ -43,7 +43,8 @@ entity bit31 is
            less : in STD_LOGIC;
            Result : out STD_LOGIC;
            Set: out STD_LOGIC;
-           overflow : out STD_LOGIC);
+           overflow : out STD_LOGIC;
+           clk: in STD_LOGIC);
 end bit31;
 
 architecture Behavioral of bit31 is
@@ -54,43 +55,48 @@ signal cinToUse: std_logic;
 signal resultToUse: std_logic;
 
 begin
-    arithmeticUnit: process (a, b, cin, ainvert, binvert, operation0, operation1, less)
+    arithmeticUnit: process (clk)
     begin
-        if(ainvert = '0') then 
-            aToUse <= a;
-        else 
-            aToUse <= not(a);
+        if (clk'event and clk = '1') then
+            if(ainvert = '0') then 
+                aToUse <= a;
+            else 
+                aToUse <= not(a);
+            end if;
+            
+            if(ainvert = '0') then 
+                bToUse <= b;
+            else 
+                bToUse <= not(b);
+            end if;
+            
+            case(func) is
+                when "100000" => --add
+                    resultToUse <= (aToUse xor bToUse) xor cin;
+                    overflow <= (aToUse and bToUse) or (aToUse and cin) or (bToUse and cin);
+                when "100010" => --subtract
+                    cinToUse <= not(cin);
+                    bToUse <= not(bToUse);
+                    resultToUse <= (aToUse xor bToUse) xor cinToUse;
+                    overflow <= (aToUse and bToUse) or (aToUse and cinToUse) or (bToUse and cinToUse);
+                when "100100" => --and
+                    resultToUse <= (aToUse and bToUse);
+                    overflow <= '0';
+                when "100101" => --or
+                    resultToUse <= (aToUse or bToUse);
+                    overflow <= '0';
+                when "101010" => --slt
+                    cinToUse <= not(cin);
+                    bToUse <= not(bToUse);
+                    resultToUse <= (aToUse xor bToUse) xor cinToUse;
+                    overflow <= (aToUse and bToUse) or (aToUse and cinToUse) or (bToUse and cinToUse);
+                    set <= not(resultToUse);
+                when others => --set to 0
+                    resultToUse <= '0';
+                    overflow <= '0';
+            end case;
+            result <= resultToUse;
         end if;
-        
-        if(ainvert = '0') then 
-            bToUse <= b;
-        else 
-            bToUse <= not(b);
-        end if;
-        
-        case(func) is
-            when "100000" => --add
-                resultToUse <= (aToUse xor bToUse) xor cin;
-                overflow <= (aToUse and bToUse) or (aToUse and cin) or (bToUse and cin);
-            when "100010" => --subtract
-                cinToUse <= not(cin);
-                bToUse <= not(bToUse);
-                resultToUse <= (aToUse xor bToUse) xor cinToUse;
-                overflow <= (aToUse and bToUse) or (aToUse and cinToUse) or (bToUse and cinToUse);
-            when "100100" => --and
-                resultToUse <= (aToUse and bToUse);
-                overflow <= '0';
-            when "100101" => --or
-                resultToUse <= (aToUse or bToUse);
-                overflow <= '0';
-            when "101010" => --slt
-                cinToUse <= not(cin);
-                bToUse <= not(bToUse);
-                resultToUse <= (aToUse xor bToUse) xor cinToUse;
-                overflow <= (aToUse and bToUse) or (aToUse and cinToUse) or (bToUse and cinToUse);
-                set <= not(resultToUse);
-        end case;
-        result <= resultToUse;
     end process;
 
 end Behavioral;

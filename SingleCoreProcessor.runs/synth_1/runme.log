@@ -1,0 +1,934 @@
+
+*** Running vivado
+    with args -log ALU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source ALU.tcl -notrace
+Command: synth_design -top ALU -part xc7a50tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7536 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 283.000 ; gain = 72.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:46]
+INFO: [Synth 8-3491] module 'Arithmetic32' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:34' bound to instance 'arithmetic' of component 'Arithmetic32' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'Arithmetic32' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:47]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'a0' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:48]
+WARNING: [Synth 8-614] signal 'aToUse' is read in the process but is not in the sensitivity list [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:55]
+WARNING: [Synth 8-614] signal 'bToUse' is read in the process but is not in the sensitivity list [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:55]
+WARNING: [Synth 8-614] signal 'cinToUse' is read in the process but is not in the sensitivity list [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'bit0to30' (1#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:48]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit0to30' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:34' bound to instance 'as' of component 'bit0to30' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:107]
+INFO: [Synth 8-3491] module 'bit31' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:34' bound to instance 'a31' of component 'bit31' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'bit31' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:49]
+WARNING: [Synth 8-614] signal 'func' is read in the process but is not in the sensitivity list [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:57]
+WARNING: [Synth 8-614] signal 'aToUse' is read in the process but is not in the sensitivity list [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:57]
+WARNING: [Synth 8-614] signal 'bToUse' is read in the process but is not in the sensitivity list [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:57]
+WARNING: [Synth 8-614] signal 'cinToUse' is read in the process but is not in the sensitivity list [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:57]
+WARNING: [Synth 8-614] signal 'resultToUse' is read in the process but is not in the sensitivity list [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'bit31' (2#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Arithmetic32' (3#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Arithmetic32.vhd:47]
+INFO: [Synth 8-3491] module 'Shifter' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Shifter.vhd:35' bound to instance 'shift' of component 'Shifter' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'Shifter' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Shifter.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Shifter' (4#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Shifter.vhd:43]
+INFO: [Synth 8-3491] module 'control' declared at 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Control.vhd:9' bound to instance 'ctrl' of component 'control' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'control' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Control.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'control' (5#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/Control.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (6#1) [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:46]
+WARNING: [Synth 8-3331] design bit0to30 has unconnected port binvert
+WARNING: [Synth 8-3331] design bit0to30 has unconnected port operation0
+WARNING: [Synth 8-3331] design bit0to30 has unconnected port operation1
+WARNING: [Synth 8-3331] design bit0to30 has unconnected port less
+WARNING: [Synth 8-3331] design bit31 has unconnected port binvert
+WARNING: [Synth 8-3331] design bit31 has unconnected port operation0
+WARNING: [Synth 8-3331] design bit31 has unconnected port operation1
+WARNING: [Synth 8-3331] design bit31 has unconnected port less
+WARNING: [Synth 8-3331] design ALU has unconnected port ALUOp[1]
+WARNING: [Synth 8-3331] design ALU has unconnected port ALUOp[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 320.379 ; gain = 109.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 320.379 ; gain = 109.852
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/britt.ahlgrim/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/britt.ahlgrim/Downloads/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/britt.ahlgrim/Downloads/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ALU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ALU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 618.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "cinToUse" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cinToUse" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Set" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "invert" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "J" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MW" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "RW" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "Zeroflag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Zeroflag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'cinToUse_reg' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit0to30.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 'cinToUse_reg' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 'Set_reg' [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:91]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 96    
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 194   
+	   6 Input      1 Bit        Muxes := 129   
+	   9 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ALU 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module bit0to30 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 4     
+Module bit31 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 5     
+Module Arithmetic32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      2 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design ALU has unconnected port ALUOp[1]
+WARNING: [Synth 8-3331] design ALU has unconnected port ALUOp[0]
+WARNING: [Synth 8-3332] Sequential element (arithmetic/a31/Set_reg) is unused and will be removed from module ALU.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:30 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_0/i_11/Z (MUX1)
+     1: i_0/i_11/A (MUX1)
+     2: i_0/i_12/O (INV)
+     3: i_0/i_12/I (INV)
+     4: i_0/i_11/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_11"
+Found timing loop:
+     0: i_0/i_13/Z (MUX1)
+     1: i_0/i_13/A (MUX1)
+     2: i_0/i_442/O (INV)
+     3: i_0/i_442/I (INV)
+     4: i_0/i_13/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_13"
+Found timing loop:
+     0: i_0/i_21/Z (MUX1)
+     1: i_0/i_21/A (MUX1)
+     2: i_0/i_440/O (INV)
+     3: i_0/i_440/I (INV)
+     4: i_0/i_21/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_21"
+Found timing loop:
+     0: i_0/i_28/Z (MUX1)
+     1: i_0/i_28/A (MUX1)
+     2: i_0/i_438/O (INV)
+     3: i_0/i_438/I (INV)
+     4: i_0/i_28/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_28"
+Found timing loop:
+     0: i_0/i_35/Z (MUX1)
+     1: i_0/i_35/A (MUX1)
+     2: i_0/i_436/O (INV)
+     3: i_0/i_436/I (INV)
+     4: i_0/i_35/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_35"
+Found timing loop:
+     0: i_0/i_42/Z (MUX1)
+     1: i_0/i_42/A (MUX1)
+     2: i_0/i_434/O (INV)
+     3: i_0/i_434/I (INV)
+     4: i_0/i_42/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_42"
+Found timing loop:
+     0: i_0/i_49/Z (MUX1)
+     1: i_0/i_49/A (MUX1)
+     2: i_0/i_432/O (INV)
+     3: i_0/i_432/I (INV)
+     4: i_0/i_49/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_49"
+Found timing loop:
+     0: i_0/i_56/Z (MUX1)
+     1: i_0/i_56/A (MUX1)
+     2: i_0/i_430/O (INV)
+     3: i_0/i_430/I (INV)
+     4: i_0/i_56/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_56"
+Found timing loop:
+     0: i_0/i_63/Z (MUX1)
+     1: i_0/i_63/A (MUX1)
+     2: i_0/i_428/O (INV)
+     3: i_0/i_428/I (INV)
+     4: i_0/i_63/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_63"
+Found timing loop:
+     0: i_0/i_70/Z (MUX1)
+     1: i_0/i_70/A (MUX1)
+     2: i_0/i_426/O (INV)
+     3: i_0/i_426/I (INV)
+     4: i_0/i_70/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_70"
+Found timing loop:
+     0: i_0/i_77/Z (MUX1)
+     1: i_0/i_77/A (MUX1)
+     2: i_0/i_424/O (INV)
+     3: i_0/i_424/I (INV)
+     4: i_0/i_77/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_77"
+Found timing loop:
+     0: i_0/i_84/Z (MUX1)
+     1: i_0/i_84/A (MUX1)
+     2: i_0/i_422/O (INV)
+     3: i_0/i_422/I (INV)
+     4: i_0/i_84/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_84"
+Found timing loop:
+     0: i_0/i_91/Z (MUX1)
+     1: i_0/i_91/A (MUX1)
+     2: i_0/i_420/O (INV)
+     3: i_0/i_420/I (INV)
+     4: i_0/i_91/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_91"
+Found timing loop:
+     0: i_0/i_98/Z (MUX1)
+     1: i_0/i_98/A (MUX1)
+     2: i_0/i_418/O (INV)
+     3: i_0/i_418/I (INV)
+     4: i_0/i_98/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_98"
+Found timing loop:
+     0: i_0/i_105/Z (MUX1)
+     1: i_0/i_105/A (MUX1)
+     2: i_0/i_416/O (INV)
+     3: i_0/i_416/I (INV)
+     4: i_0/i_105/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_105"
+Found timing loop:
+     0: i_0/i_112/Z (MUX1)
+     1: i_0/i_112/A (MUX1)
+     2: i_0/i_414/O (INV)
+     3: i_0/i_414/I (INV)
+     4: i_0/i_112/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_112"
+Found timing loop:
+     0: i_0/i_119/Z (MUX1)
+     1: i_0/i_119/A (MUX1)
+     2: i_0/i_412/O (INV)
+     3: i_0/i_412/I (INV)
+     4: i_0/i_119/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_119"
+Found timing loop:
+     0: i_0/i_126/Z (MUX1)
+     1: i_0/i_126/A (MUX1)
+     2: i_0/i_410/O (INV)
+     3: i_0/i_410/I (INV)
+     4: i_0/i_126/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_126"
+Found timing loop:
+     0: i_0/i_133/Z (MUX1)
+     1: i_0/i_133/A (MUX1)
+     2: i_0/i_408/O (INV)
+     3: i_0/i_408/I (INV)
+     4: i_0/i_133/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_133"
+Found timing loop:
+     0: i_0/i_140/Z (MUX1)
+     1: i_0/i_140/A (MUX1)
+     2: i_0/i_406/O (INV)
+     3: i_0/i_406/I (INV)
+     4: i_0/i_140/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_140"
+Found timing loop:
+     0: i_0/i_147/Z (MUX1)
+     1: i_0/i_147/A (MUX1)
+     2: i_0/i_404/O (INV)
+     3: i_0/i_404/I (INV)
+     4: i_0/i_147/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_147"
+Found timing loop:
+     0: i_0/i_154/Z (MUX1)
+     1: i_0/i_154/A (MUX1)
+     2: i_0/i_402/O (INV)
+     3: i_0/i_402/I (INV)
+     4: i_0/i_154/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_154"
+Found timing loop:
+     0: i_0/i_161/Z (MUX1)
+     1: i_0/i_161/A (MUX1)
+     2: i_0/i_400/O (INV)
+     3: i_0/i_400/I (INV)
+     4: i_0/i_161/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_161"
+Found timing loop:
+     0: i_0/i_168/Z (MUX1)
+     1: i_0/i_168/A (MUX1)
+     2: i_0/i_398/O (INV)
+     3: i_0/i_398/I (INV)
+     4: i_0/i_168/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_168"
+Found timing loop:
+     0: i_0/i_175/Z (MUX1)
+     1: i_0/i_175/A (MUX1)
+     2: i_0/i_396/O (INV)
+     3: i_0/i_396/I (INV)
+     4: i_0/i_175/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_175"
+Found timing loop:
+     0: i_0/i_182/Z (MUX1)
+     1: i_0/i_182/A (MUX1)
+     2: i_0/i_394/O (INV)
+     3: i_0/i_394/I (INV)
+     4: i_0/i_182/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_182"
+Found timing loop:
+     0: i_0/i_189/Z (MUX1)
+     1: i_0/i_189/A (MUX1)
+     2: i_0/i_392/O (INV)
+     3: i_0/i_392/I (INV)
+     4: i_0/i_189/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_189"
+Found timing loop:
+     0: i_0/i_196/Z (MUX1)
+     1: i_0/i_196/A (MUX1)
+     2: i_0/i_390/O (INV)
+     3: i_0/i_390/I (INV)
+     4: i_0/i_196/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_196"
+Found timing loop:
+     0: i_0/i_203/Z (MUX1)
+     1: i_0/i_203/A (MUX1)
+     2: i_0/i_388/O (INV)
+     3: i_0/i_388/I (INV)
+     4: i_0/i_203/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_203"
+Found timing loop:
+     0: i_0/i_210/Z (MUX1)
+     1: i_0/i_210/A (MUX1)
+     2: i_0/i_386/O (INV)
+     3: i_0/i_386/I (INV)
+     4: i_0/i_210/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_210"
+Found timing loop:
+     0: i_0/i_219/O (GATE_2_1_NOR)
+     1: i_0/i_219/I0 (GATE_2_1_NOR)
+     2: i_0/i_218/O (GATE_2_8_AND)
+     3: i_0/i_218/I0 (GATE_2_8_AND)
+     4: i_0/i_384/O (BUF)
+     5: i_0/i_384/I (BUF)
+     6: i_0/i_219/O (GATE_2_1_NOR)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from I0 -to O i_0/i_219"
+Found timing loop:
+     0: i_0/i_6/Z (MUX1)
+     1: i_0/i_6/A (MUX1)
+     2: i_0/i_5/O (INV)
+     3: i_0/i_5/I (INV)
+     4: i_0/i_7/O (BUF)
+     5: i_0/i_7/I (BUF)
+     6: i_0/i_6/Z (MUX1)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/bit31.vhd:59]
+Inferred a: "set_disable_timing -from A -to Z i_0/i_6"
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:30 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_285/O (LUT3)
+     1: i_285/I2 (LUT3)
+     2: i_235/O (LUT1)
+     3: i_235/I0 (LUT1)
+     4: i_285/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_285"
+Found timing loop:
+     0: i_286/O (LUT3)
+     1: i_286/I2 (LUT3)
+     2: i_266/O (LUT1)
+     3: i_266/I0 (LUT1)
+     4: i_286/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_286"
+Found timing loop:
+     0: i_287/O (LUT3)
+     1: i_287/I2 (LUT3)
+     2: i_265/O (LUT1)
+     3: i_265/I0 (LUT1)
+     4: i_287/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_287"
+Found timing loop:
+     0: i_288/O (LUT3)
+     1: i_288/I2 (LUT3)
+     2: i_264/O (LUT1)
+     3: i_264/I0 (LUT1)
+     4: i_288/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_288"
+Found timing loop:
+     0: i_290/O (LUT3)
+     1: i_290/I2 (LUT3)
+     2: i_262/O (LUT1)
+     3: i_262/I0 (LUT1)
+     4: i_290/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_290"
+Found timing loop:
+     0: i_291/O (LUT3)
+     1: i_291/I2 (LUT3)
+     2: i_261/O (LUT1)
+     3: i_261/I0 (LUT1)
+     4: i_291/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_291"
+Found timing loop:
+     0: i_292/O (LUT3)
+     1: i_292/I2 (LUT3)
+     2: i_260/O (LUT1)
+     3: i_260/I0 (LUT1)
+     4: i_292/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_292"
+Found timing loop:
+     0: i_294/O (LUT3)
+     1: i_294/I2 (LUT3)
+     2: i_258/O (LUT1)
+     3: i_258/I0 (LUT1)
+     4: i_294/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_294"
+Found timing loop:
+     0: i_295/O (LUT3)
+     1: i_295/I2 (LUT3)
+     2: i_257/O (LUT1)
+     3: i_257/I0 (LUT1)
+     4: i_295/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_295"
+Found timing loop:
+     0: i_296/O (LUT3)
+     1: i_296/I2 (LUT3)
+     2: i_256/O (LUT1)
+     3: i_256/I0 (LUT1)
+     4: i_296/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_296"
+Found timing loop:
+     0: i_298/O (LUT3)
+     1: i_298/I2 (LUT3)
+     2: i_254/O (LUT1)
+     3: i_254/I0 (LUT1)
+     4: i_298/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_298"
+Found timing loop:
+     0: i_299/O (LUT3)
+     1: i_299/I2 (LUT3)
+     2: i_253/O (LUT1)
+     3: i_253/I0 (LUT1)
+     4: i_299/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_299"
+Found timing loop:
+     0: i_300/O (LUT3)
+     1: i_300/I2 (LUT3)
+     2: i_252/O (LUT1)
+     3: i_252/I0 (LUT1)
+     4: i_300/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_300"
+Found timing loop:
+     0: i_302/O (LUT3)
+     1: i_302/I2 (LUT3)
+     2: i_250/O (LUT1)
+     3: i_250/I0 (LUT1)
+     4: i_302/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_302"
+Found timing loop:
+     0: i_303/O (LUT3)
+     1: i_303/I2 (LUT3)
+     2: i_249/O (LUT1)
+     3: i_249/I0 (LUT1)
+     4: i_303/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_303"
+Found timing loop:
+     0: i_304/O (LUT3)
+     1: i_304/I2 (LUT3)
+     2: i_248/O (LUT1)
+     3: i_248/I0 (LUT1)
+     4: i_304/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_304"
+Found timing loop:
+     0: i_306/O (LUT3)
+     1: i_306/I2 (LUT3)
+     2: i_246/O (LUT1)
+     3: i_246/I0 (LUT1)
+     4: i_306/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_306"
+Found timing loop:
+     0: i_307/O (LUT3)
+     1: i_307/I2 (LUT3)
+     2: i_245/O (LUT1)
+     3: i_245/I0 (LUT1)
+     4: i_307/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_307"
+Found timing loop:
+     0: i_308/O (LUT3)
+     1: i_308/I2 (LUT3)
+     2: i_244/O (LUT1)
+     3: i_244/I0 (LUT1)
+     4: i_308/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_308"
+Found timing loop:
+     0: i_310/O (LUT3)
+     1: i_310/I2 (LUT3)
+     2: i_242/O (LUT1)
+     3: i_242/I0 (LUT1)
+     4: i_310/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_310"
+Found timing loop:
+     0: i_311/O (LUT3)
+     1: i_311/I2 (LUT3)
+     2: i_241/O (LUT1)
+     3: i_241/I0 (LUT1)
+     4: i_311/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_311"
+Found timing loop:
+     0: i_312/O (LUT3)
+     1: i_312/I2 (LUT3)
+     2: i_240/O (LUT1)
+     3: i_240/I0 (LUT1)
+     4: i_312/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_312"
+Found timing loop:
+     0: i_314/O (LUT3)
+     1: i_314/I2 (LUT3)
+     2: i_238/O (LUT1)
+     3: i_238/I0 (LUT1)
+     4: i_314/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_314"
+Found timing loop:
+     0: i_315/O (LUT2)
+     1: i_315/I0 (LUT2)
+     2: i_221/O (LUT6)
+     3: i_221/I0 (LUT6)
+     4: i_315/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I0 -to O i_315"
+Found timing loop:
+     0: i_284/O (LUT3)
+     1: i_284/I2 (LUT3)
+     2: i_225/O (LUT1)
+     3: i_225/I0 (LUT1)
+     4: i_284/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_284"
+Found timing loop:
+     0: i_313/O (LUT3)
+     1: i_313/I2 (LUT3)
+     2: i_239/O (LUT1)
+     3: i_239/I0 (LUT1)
+     4: i_313/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_313"
+Found timing loop:
+     0: i_309/O (LUT3)
+     1: i_309/I2 (LUT3)
+     2: i_243/O (LUT1)
+     3: i_243/I0 (LUT1)
+     4: i_309/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_309"
+Found timing loop:
+     0: i_305/O (LUT3)
+     1: i_305/I2 (LUT3)
+     2: i_247/O (LUT1)
+     3: i_247/I0 (LUT1)
+     4: i_305/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_305"
+Found timing loop:
+     0: i_301/O (LUT3)
+     1: i_301/I2 (LUT3)
+     2: i_251/O (LUT1)
+     3: i_251/I0 (LUT1)
+     4: i_301/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_301"
+Found timing loop:
+     0: i_297/O (LUT3)
+     1: i_297/I2 (LUT3)
+     2: i_255/O (LUT1)
+     3: i_255/I0 (LUT1)
+     4: i_297/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_297"
+Found timing loop:
+     0: i_293/O (LUT3)
+     1: i_293/I2 (LUT3)
+     2: i_259/O (LUT1)
+     3: i_259/I0 (LUT1)
+     4: i_293/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_293"
+Found timing loop:
+     0: i_289/O (LUT3)
+     1: i_289/I2 (LUT3)
+     2: i_263/O (LUT1)
+     3: i_263/I0 (LUT1)
+     4: i_289/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.srcs/sources_1/new/ALU.vhd:34]
+Inferred a: "set_disable_timing -from I2 -to O i_289"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |LUT2  |    49|
+|3     |LUT3  |    31|
+|4     |LUT4  |    73|
+|5     |LUT5  |    43|
+|6     |LUT6  |   128|
+|7     |MUXF7 |     3|
+|8     |FDRE  |    32|
+|9     |FDSE  |     1|
+|10    |LD    |    32|
+|11    |IBUF  |    71|
+|12    |OBUF  |    34|
++------+------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------+------+
+|      |Instance           |Module       |Cells |
++------+-------------------+-------------+------+
+|1     |top                |             |   499|
+|2     |  arithmetic       |Arithmetic32 |   306|
+|3     |    a0             |bit0to30     |     8|
+|4     |    a31            |bit31        |     8|
+|5     |    \stage[10].as  |bit0to30_0   |    14|
+|6     |    \stage[11].as  |bit0to30_1   |     6|
+|7     |    \stage[12].as  |bit0to30_2   |    13|
+|8     |    \stage[13].as  |bit0to30_3   |     6|
+|9     |    \stage[14].as  |bit0to30_4   |    13|
+|10    |    \stage[15].as  |bit0to30_5   |     6|
+|11    |    \stage[16].as  |bit0to30_6   |    13|
+|12    |    \stage[17].as  |bit0to30_7   |     5|
+|13    |    \stage[18].as  |bit0to30_8   |    14|
+|14    |    \stage[19].as  |bit0to30_9   |     6|
+|15    |    \stage[1].as   |bit0to30_10  |    13|
+|16    |    \stage[20].as  |bit0to30_11  |    15|
+|17    |    \stage[21].as  |bit0to30_12  |     6|
+|18    |    \stage[22].as  |bit0to30_13  |    13|
+|19    |    \stage[23].as  |bit0to30_14  |     7|
+|20    |    \stage[24].as  |bit0to30_15  |    16|
+|21    |    \stage[25].as  |bit0to30_16  |     6|
+|22    |    \stage[26].as  |bit0to30_17  |    15|
+|23    |    \stage[27].as  |bit0to30_18  |     4|
+|24    |    \stage[28].as  |bit0to30_19  |     9|
+|25    |    \stage[29].as  |bit0to30_20  |     7|
+|26    |    \stage[2].as   |bit0to30_21  |     5|
+|27    |    \stage[30].as  |bit0to30_22  |    15|
+|28    |    \stage[3].as   |bit0to30_23  |     7|
+|29    |    \stage[4].as   |bit0to30_24  |    13|
+|30    |    \stage[5].as   |bit0to30_25  |     5|
+|31    |    \stage[6].as   |bit0to30_26  |    13|
+|32    |    \stage[7].as   |bit0to30_27  |     6|
+|33    |    \stage[8].as   |bit0to30_28  |    14|
+|34    |    \stage[9].as   |bit0to30_29  |     5|
++------+-------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 618.047 ; gain = 407.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 64 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:08 . Memory (MB): peak = 618.047 ; gain = 109.852
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:33 . Memory (MB): peak = 618.047 ; gain = 407.520
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 24 Warnings, 64 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 618.047 ; gain = 407.520
+INFO: [Common 17-1381] The checkpoint 'C:/Users/britt.ahlgrim/Desktop/marquette/years/2016-2017/semester 2/Computer Hardware/gitRepo/SingleCoreProcessor/SingleCoreProcessor.runs/synth_1/ALU.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 618.047 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 19:29:58 2017...
